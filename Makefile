@@ -1,7 +1,7 @@
 all: compile link
 
 compile:
-	g++ -Isrc/include -c coding/main.cpp
+	g++ -Isrc/include -c coding/gravity.cpp
 
 link:
-	g++ *.o -o main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
+	g++ gravity.o -o gravity -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
